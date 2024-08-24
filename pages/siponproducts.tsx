@@ -32,16 +32,21 @@ const SiponProducts = () => {
                 </div>
 
                 <div className="ml-4 flex-grow text-center">
-                  {Quotes[1].fullSipContent.map((paragraph, index) => (
+                  {Quotes[1]?.fullSipContent?.map((paragraph, index) => (
                     <p key={index} className="mb-4">
                       {paragraph}
                     </p>
-                  ))}
+                  )) || <p>No content available.</p>}
                 </div>
 
-                <Link href='/siponshopping' alt='' className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+
+                <Link
+                  href='/siponshopping'
+                  className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+                >
                   Buy Sipon
                 </Link>
+
               </div>
             </div>
           </div>

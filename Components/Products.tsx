@@ -19,68 +19,66 @@ const Products = () => {
   };
 
   return (
-    <section id="products" className="p-3 m-3">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <h1 className="text-center text-xl font-bold mb-4">Our Products</h1>
+    <section id="products" className="p-6 bg-gray-100">
+      <div className="container mx-auto bg-white shadow-lg rounded-lg p-6">
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-bold text-gray-800">Our Products</h1>
+        </div>
 
-            {/* Product Row */}
-            <div className="flex flex-wrap justify-between">
-              {/* Sipon Products */}
-              <div className="border-2 p-3 flex flex-col items-center mb-6 w-full md:w-[48%]">
-                <h3 className="font-semibold text-lg mb-2">Sipon Products</h3>
-                <div className="flex items-center">
-                  <div className="flex-shrink-0">
-                    <Image
-                      src="/Sipon-Logo.png"
-                      width={300}
-                      height={300}
-                      alt="Sipon Logo"
-                      className="pb-2 pl-2 object-cover"
-                      style={{ objectFit: "cover" }} // Prevent image distortion
-                    />
-                  </div>
-                  <div className="ml-4 flex-grow">
-                    <p>{Quotes[0].limitedSipContent}</p>
-                  </div>
-                </div>
-                <Link
-                  href='/siponproducts'
-                  key='siponproducts'
-                  className="mt-2 text-blue-500 hover:underline"
-                >
-                  Read More
-                </Link>
+        {/* Product Row */}
+        <div className="flex flex-wrap justify-between">
+          {/* Sipon Products */}
+          <div className="border p-6 flex flex-col items-center mb-6 w-full md:w-[48%] bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="font-semibold text-xl text-blue-600 mb-4">Sipon Products</h3>
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <Image
+                  src="/Sipon-Logo.png"
+                  width={300}
+                  height={300}
+                  alt="Sipon Logo"
+                  className="pb-2 pl-2 object-cover"
+                  style={{ objectFit: "cover" }} // Prevent image distortion
+                />
               </div>
-
-              {/* Bindu Products */}
-              <div className="border-2 p-3 flex flex-col items-center mb-6 w-full md:w-[48%]">
-                <h3 className="font-semibold text-lg mb-2">Bindu Products</h3>
-                <div className="flex">
-                  <div className="flex-shrink-0">
-                    <Image
-                      src="/Bindu-logo.png"
-                      width={300}
-                      height={300}
-                      alt="Bindu Logo"
-                      className="pb-2 pl-2 object-cover"
-                      style={{ objectFit: "cover" }} // Prevent image distortion
-                    />
-                  </div>
-                  <div className="ml-4 flex-grow">
-                    <p>{Quotes[2].limitedBinContent}</p>
-                  </div>
-                </div>
-                <Link
-                  href='/binduproducts'
-                  key='binduproducts'
-                  className="mt-2 text-blue-500 hover:underline"
-                >
-                  Read More
-                </Link>
+              <div className="ml-4 flex-grow">
+                <p className="text-gray-600">{Quotes[0].limitedSipContent}</p>
               </div>
             </div>
+            <Link
+              href='/siponproducts'
+              key='siponproducts'
+              className="mt-4 text-blue-500 hover:underline"
+            >
+              Read More
+            </Link>
+          </div>
+
+          {/* Bindu Products */}
+          <div className="border p-6 flex flex-col items-center mb-6 w-full md:w-[48%] bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="font-semibold text-xl text-blue-600 mb-4">Bindu Products</h3>
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <Image
+                  src="/Bindu-logo.png"
+                  width={300}
+                  height={300}
+                  alt="Bindu Logo"
+                  className="pb-2 pl-2 object-cover"
+                  style={{ objectFit: "cover" }} // Prevent image distortion
+                />
+              </div>
+              <div className="ml-4 flex-grow">
+                <p className="text-gray-600">{Quotes[2].limitedBinContent}</p>
+              </div>
+            </div>
+            <Link
+              href='/binduproducts'
+              key='binduproducts'
+              className="mt-4 text-blue-500 hover:underline"
+            >
+              Read More
+            </Link>
           </div>
         </div>
       </div>
