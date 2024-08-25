@@ -2,7 +2,7 @@ import React from "react";
 import "../app/globals.css";
 import Image from "next/image";
 import { Quotes } from "@/constants";
-import Footer from "@/components/Footer";
+import Footer from "@/Components/Footer";
 import Link from "next/link";
 import Head from 'next/head';
 

@@ -1,5 +1,5 @@
-import Sipon from '@/components/Sipon'
-import Footer from '@/components/Footer'
+import Sipon from '@/Components/Sipon'
+import Footer from '@/Components/Footer'
 import React from 'react'
 
 const Siponshopping = () => {
