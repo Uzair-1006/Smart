@@ -1,5 +1,5 @@
-import Bindu from '@/Components/Bindu'
-import Footer from '@/Components/Footer'
+import Bindu from '@/components/Bindu'
+import Footer from '@/components/Footer'
 import React from 'react'
 
 const bindushopping = () => {

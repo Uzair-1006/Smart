@@ -1,6 +1,6 @@
 import React from "react";
 import "../app/globals.css";
-import Footer from "@/Components/Footer";
+import Footer from "@/components/Footer";
 const JoinUs = () => {
   return (
     <>

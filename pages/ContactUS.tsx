@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import "../app/globals.css";
-import Footer from '@/Components/Footer';
+import Footer from '@/components/Footer';
 
 const Contact: React.FC = () => {
   return (

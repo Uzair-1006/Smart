@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import "../app/globals.css";
-import Footer from '@/Components/Footer';
+import Footer from '@/components/Footer';
 
 export default function AboutUs() {
   return (
