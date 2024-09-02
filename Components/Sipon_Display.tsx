@@ -8,7 +8,7 @@ const BeveragePricing = () => {
   const mango2L = SIPON_PRODUCTS[4];
 
   return (
-    <div id='Prices' className="bg-gradient-to-r from-yellow-100 via-yellow-300 to-yellow-500 py-12">
+    <section id='Prices' className="bg-gradient-to-r from-yellow-100 via-yellow-300 to-yellow-500 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold text-gray-900">Our Sipon Beverage Selection</h2>
@@ -83,7 +83,7 @@ const BeveragePricing = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
