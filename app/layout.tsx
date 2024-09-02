@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { provider } from "./GlobalRedux/store"; // Import the Providers component
+import { Providers } from "./GlobalRedux/provider"; // Ensure the path matches the actual file location
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* Wrap the body content with the Providers component */}
       <body className={inter.className}>
-        <provider>{children}</provider>
+        <Providers>{children}</Providers> {/* Correctly use Providers component */}
       </body>
     </html>
   );
