@@ -113,7 +113,7 @@ export const FRUZON_PRODUCTS = [
 export const BINDU_PRODUCTS = [
   {
     title: 'Jeera PET - 200 ml',
-    icon: '/200ml-bint.png',
+    icon: '/200ml-bintt.png',
     variant: 'blue',
     description: 'A 200 ml PET bottle of Jeera drink.',
     price: '₹310',
