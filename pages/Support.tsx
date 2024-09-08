@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import "../app/globals.css";
-
+import Footer from '@/Components/Footer';
 const Support: React.FC = () => {
   return (
     <>
@@ -48,6 +48,7 @@ const Support: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

@@ -23,7 +23,7 @@ const Header = () => {
           Home
         </Link>
         <Link
-          href="#Products"
+          href="/bindushopping"
           key="Products"
           className="regular-16 text-black-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
         >
