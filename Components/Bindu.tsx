@@ -32,7 +32,7 @@ const Bindu = () => {
               <button
                 key={index}
                 onClick={() => setSelectedProduct(product)}
-                className={`px-4 py-2 rounded-lg shadow-md transition-transform transform hover:scale-105 ${
+                className={`lg:px-4 lg:py-2 md:px-1 md:py-1 rounded-lg shadow-md transition-transform transform hover:scale-105 ${
                   selectedProduct.title === product.title
                     ? 'bg-blue-500 text-white border-2 border-blue-700'
                     : 'bg-gray-200 text-gray-700 border-2 border-gray-300'
