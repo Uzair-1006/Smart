@@ -29,8 +29,10 @@ const Products = () => {
         <div className="flex flex-wrap justify-between">
           {/* Sipon Products */}
           <div className="border p-6 flex flex-col items-center mb-6 w-full md:w-[48%] bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="font-semibold text-xl text-blue-600 mb-4">Sipon Products</h3>
-            <div className="flex items-center">
+            <h3 className="font-semibold text-xl text-blue-600 mb-4">
+              Sipon Products
+            </h3>
+            <div className="lg:flex flex-col sm:flex-row items-center">
               <div className="flex-shrink-0">
                 <Image
                   src="/Sipon-Logo.png"
@@ -41,13 +43,13 @@ const Products = () => {
                   style={{ objectFit: "cover" }} // Prevent image distortion
                 />
               </div>
-              <div className="ml-4 flex-grow">
+              <div className="mt-4 sm:mt-0 sm:ml-4 flex-grow">
                 <p className="text-gray-600">{Quotes[0].limitedSipContent}</p>
               </div>
             </div>
             <Link
-              href='/siponproducts'
-              key='siponproducts'
+              href="/siponproducts"
+              key="siponproducts"
               className="mt-4 text-blue-500 hover:underline"
             >
               Read More
@@ -56,8 +58,10 @@ const Products = () => {
 
           {/* Bindu Products */}
           <div className="border p-6 flex flex-col items-center mb-6 w-full md:w-[48%] bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="font-semibold text-xl text-blue-600 mb-4">Bindu Products</h3>
-            <div className="flex">
+            <h3 className="font-semibold text-xl text-blue-600 mb-4">
+              Bindu Products
+            </h3>
+            <div className="lg:flex flex-col">
               <div className="flex-shrink-0">
                 <Image
                   src="/Bindu-logo.png"
@@ -73,8 +77,8 @@ const Products = () => {
               </div>
             </div>
             <Link
-              href='/binduproducts'
-              key='binduproducts'
+              href="/binduproducts"
+              key="binduproducts"
               className="mt-4 text-blue-500 hover:underline"
             >
               Read More
