@@ -1,58 +1,100 @@
 import React from "react";
 import "../app/globals.css";
-import { useRouter } from 'next/router';
 import Link from "next/link";
 
 const Footer = () => {
-  
-
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="container mx-auto">
-        <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <h2 className="text-lg ml-4 font-bold mb-2">Our Products</h2>
-            <ul className="ml-5">
-              <li className="hover:transform hover:scale-110 hover:translate-x-2 transition duration-300">
-                <a href="/binduproducts" className="hover:underline">Bindu Products</a>
-              </li>
-              <li className="hover:transform hover:scale-110 hover:translate-x-2 transition duration-300">
-                <a href="/siponproducts" className="hover:underline">Sipon Products</a>
-              </li>
-              <li className="hover:transform hover:scale-110 hover:translate-x-2 transition duration-300">
-                <a href="/AvailableSoon" className="hover:underline">Water Products</a>
-              </li>
+    <footer className="bg-gray-800 text-white py-8 animate-fadeIn">
+      <div className="container mx-auto px-6">
+        {/* Footer Content */}
+        <div className="flex flex-col md:flex-row justify-between gap-8">
+          {/* Products Section */}
+          <div className="w-full md:w-1/4">
+            <h2 className="text-lg font-bold mb-3 ml-4">Our Products</h2>
+            <ul className="ml-5 space-y-2">
+              {[
+                { name: "Bindu Products", link: "/binduproducts" },
+                { name: "Sipon Products", link: "/siponproducts" },
+                { name: "Water Products", link: "/AvailableSoon" },
+              ].map((item, index) => (
+                <li key={index} className="group transition duration-300">
+                  <Link href={item.link} className="hover:underline flex items-center space-x-2">
+                    <span className="group-hover:translate-x-2 transition-transform duration-300">➤</span>
+                    <span>{item.name}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-          <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <h2 className="text-lg font-bold mb-2">About Us</h2>
-            <ul>
-              <li className="hover:transform hover:scale-110 hover:translate-x-2 transition duration-300">
-                <a href="/AboutUS" className="hover:underline">Our Story</a>
-              </li>
-              <li className="hover:transform hover:scale-110 hover:translate-x-2 transition duration-300">
-                <a href="/JoinUS" className="hover:underline">Join Us</a>
-              </li>
+
+          {/* Shopping Section */}
+          <div className="w-full md:w-1/4">
+            <h2 className="text-lg font-bold mb-3 ml-4">Shopping</h2>
+            <ul className="ml-5 space-y-2">
+              {[
+                { name: "Bindu Shopping", link: "/bindushopping" },
+                { name: "Sipon Shopping", link: "/siponshopping" },
+              ].map((item, index) => (
+                <li key={index} className="group transition duration-300">
+                  <Link href={item.link} className="hover:underline flex items-center space-x-2">
+                    <span className="group-hover:translate-x-2 transition-transform duration-300">➤</span>
+                    <span>{item.name}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-          <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <h2 className="text-lg font-bold mb-2">Contact</h2>
-            <ul>
-              <li className="hover:transform hover:scale-110 hover:translate-x-2 transition duration-300">
-                <a href="/ContactUS" className="hover:underline">Contact Us</a>
-              </li>
-              <li className="hover:transform hover:scale-110 hover:translate-x-2 transition duration-300">
-                <a href="/Support" className="hover:underline">Support</a>
-              </li>
+
+          {/* About Us Section */}
+          <div className="w-full md:w-1/4">
+            <h2 className="text-lg font-bold mb-3">About Us</h2>
+            <ul className="space-y-2">
+              {[
+                { name: "Our Story", link: "/AboutUS" },
+                { name: "Join Us", link: "/JoinUS" },
+              ].map((item, index) => (
+                <li key={index} className="group transition duration-300">
+                  <Link href={item.link} className="hover:underline flex items-center space-x-2">
+                    <span className="group-hover:translate-x-2 transition-transform duration-300">➤</span>
+                    <span>{item.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Section */}
+          <div className="w-full md:w-1/4">
+            <h2 className="text-lg font-bold mb-3">Contact</h2>
+            <ul className="space-y-2">
+              {[
+                { name: "Contact Us", link: "/ContactUS" },
+                { name: "Support", link: "/Support" },
+              ].map((item, index) => (
+                <li key={index} className="group transition duration-300">
+                  <Link href={item.link} className="hover:underline flex items-center space-x-2">
+                    <span className="group-hover:translate-x-2 transition-transform duration-300">➤</span>
+                    <span>{item.name}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
-        <div className="mt-6 border-t border-gray-700 pt-4 text-center">
+
+        {/* Bottom Section */}
+        <div className="mt-8 border-t border-gray-700 pt-4 text-center">
           <p className="mb-2">
-            <Link href="/" className="text-lg font-bold hover:underline">Back to Home</Link>
+            <Link href="/" className="text-lg font-bold hover:underline transition-transform duration-300 hover:scale-105">
+              Back to Home
+            </Link>
           </p>
-          <p>© 2024 BinduProducts. All rights reserved.</p>
-          <p><a href="#privacy" className="hover:underline">Privacy Policy</a></p>
+          <p>© 2025 Smart Agencies. All rights reserved.</p>
+          <p>
+            <Link href="/privacy" className="hover:underline transition-opacity duration-300 hover:opacity-80">
+              Privacy Policy
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

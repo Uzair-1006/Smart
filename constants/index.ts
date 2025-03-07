@@ -2,7 +2,7 @@ export const SIPON_PRODUCTS = [
   
   {
     title: 'Sipon Mango - 160 ml',
-    icon: '/160-mangot.png',
+    icon: '/Sipon.png',
     variant: 'green',
     description: 'Enjoy the delicious taste of mango in this 160 ml bottle.',
     price: '₹231',
@@ -29,7 +29,7 @@ export const SIPON_PRODUCTS = [
   },
   {
     title: 'Sipon Mango - 2.0L',
-    icon: '/2ltr-mangot.png',
+    icon: '/500ml-mangot.png',
     variant: 'green',
     description: 'A 2.0L bottle, ideal for parties and gatherings.',
     price: '₹480',
@@ -113,7 +113,7 @@ export const FRUZON_PRODUCTS = [
 export const BINDU_PRODUCTS = [
   {
     title: 'Jeera PET - 200 ml',
-    icon: '/200ml-bintt.png',
+    icon: '/Bindu.png',
     variant: 'blue',
     description: 'A 200 ml PET bottle of Jeera drink.',
     price: '₹310',
@@ -156,6 +156,15 @@ export const BINDU_PRODUCTS = [
     psRate: '₹71.4',
     mrp: '₹95'
   },
+  {
+    title: 'Fizzy Ginger Masala',
+    icon: '/ginger.png',
+    variant: 'blue',
+    description: 'A 200ml of refreshing Ginger drink.',
+    price: '₹240',
+    psRate: '₹8',
+    mrp: '₹12'
+  }
 ];
 
 
