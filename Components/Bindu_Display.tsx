@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { BINDU_PRODUCTS } from '@/constants';
+
 const BinduProducts = () => {
   const selectedProducts = [0, 5, 4].map(index => BINDU_PRODUCTS[index]);
 
@@ -40,9 +42,13 @@ const BinduProducts = () => {
                     <span className="ml-3 text-gray-700">{product.psRate}</span>
                   </li>
                 </ul>
-                <button className="mt-8 w-full bg-blue-600 text-white py-2 px-4 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-102 group">
-                  <span className="relative inline-block transition-transform duration-300 group-hover:translate-x-1">Buy Now</span>
-                </button>
+
+                {/* Buy Now Button linking to /smart-shopping */}
+                <Link href="/smart-shopping" passHref>
+                  <button className="mt-8 w-full bg-blue-600 text-white py-2 px-4 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-102 group">
+                    <span className="relative inline-block transition-transform duration-300 group-hover:translate-x-1">Buy Now</span>
+                  </button>
+                </Link>
               </div>
             </div>
           ))}

@@ -34,6 +34,7 @@ const Footer = () => {
               {[
                 { name: "Bindu Shopping", link: "/bindushopping" },
                 { name: "Sipon Shopping", link: "/siponshopping" },
+                { name : "Shop all products" , link : "/smart-shopping"}
               ].map((item, index) => (
                 <li key={index} className="group transition duration-300">
                   <Link href={item.link} className="hover:underline flex items-center space-x-2">
